@@ -1,0 +1,637 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.ligne{
+	background-color: white;
+}
+.price24{
+	font-size: 24px;
+}
+.price40{
+	font-size: 40px;
+}
+body{
+	background-color: #F2F2F2;
+}
+a{
+	text-decoration: none;
+}
+h1, h2, h3, em {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 25px;
+}
+h3{
+	font-size: 20px;
+}
+p,a,li{
+	font-family: 'Open Sans', sans-serif;
+}
+li{
+	list-style-type: none;
+}
+main{
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.checked {
+  color: orange;
+}
+.noChecked {
+	color: #B9B9B9;
+}
+#star{
+	text-align: right;
+}
+.head2{
+	display: none;
+}
+
+
+/*------Header-----*/
+header{
+	color: white;
+	background-image: url(img/bg.jpg) ;
+	background-color: #96B011;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 220px;
+	position: relative;
+}
+header > div {
+	background-image: url(img/ribbon.svg);
+	background-size: 150px;
+	background-repeat: no-repeat;
+	background-position: top right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+header p{
+	text-align: center;
+	background-color: rgb(135,158,15);
+	padding: 0.4em 0;
+}
+header div #logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3% 8% 0;
+}
+header div #nav{
+
+}
+header div #nav li{
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+header #logo a:nth-child(2){
+	color: white;
+}
+header #logo a:nth-child(2) i{
+	border:1px solid white;
+	padding: 10px;
+	border-radius: 50%;
+}
+header #nav li{
+	padding: 1em;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+header #nav li a{
+	color: white;
+}
+header #nav li:hover{
+	background-color: rgba(255,255,255,0.2);
+}
+
+/*--------Main--------*/
+
+/*--------HOME-------*/
+main h2{
+	color: rgb(135,158,15);
+	text-align: center;
+}
+main h2:after {
+    content: "";
+    display: block;
+    border-top: 1px solid rgba(176,144,103,0.3);
+    margin-top: -10px;
+}
+#profitez{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#profitez h1{
+	color: rgb(135,158,15);
+	margin-bottom: 0;
+}
+#profitez img{
+	width: 100%;
+	margin: 1.5em 0;
+}
+.flexslider{
+	margin: 1.5em 0;
+}
+#choix{
+	margin: 1.5em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	width: 100%;
+	padding: 0.7em 0;
+}
+#choix .the{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding: 0.7em 0;
+}
+#choix .the div{
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+#choix .the div:hover{
+	transform: scale(1.1);
+}
+.the:hover div{
+	opacity: 0.5;
+}
+#choix .the div:hover{
+	opacity: 1;
+}
+#best{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+	padding: 1em 0 1.5em 0;
+	margin: 1.5em 0;
+}
+#best div{
+	padding: 0 1em;
+	text-align: center;
+	height: 650px;
+}
+#best div img{
+	padding: 0.7em 0;
+	transition: transform 2s;
+}
+#best div img:hover{
+	transform: rotate(180deg);
+}
+#best div *{
+	margin: 0.3em 0;
+}
+#listing .article a, #best div a{
+	display: inline-block;
+	background-color: #B09067;
+	padding: 1em 1em;
+	color: white;
+	letter-spacing: 0.2em;
+}
+#listing .article a:hover, #best div a:hover{
+	opacity: 0.7;
+}
+
+/*-------Listing------*/
+#listing article{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin: 1em 0;
+	padding: 2em;
+}
+#listing .presentation img{
+	float: left;
+}
+#listing .presentation h2{
+	text-align: left;
+}
+#listing .presentation span{
+	margin-left: 1em;
+}
+
+#listing .presentation p{
+	margin: 1em 0;
+	line-height: 1.5em;
+}
+#listing .article{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+}
+#listing .article *{
+	margin: 0.3em 0;
+}
+
+/*------About--------*/
+#aboutArticals{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: white;
+	padding: 2em;
+	margin: 0 0 3em;
+}
+#aboutArticals > *{
+	margin: 1em 0;
+}
+#aboutArticals #art1 h2{
+	text-align: left;
+}
+#aboutArticals #art1 span{
+	margin-left: 1em;
+}
+#aboutArticals #art1 img{
+	float: left;
+	margin: 1em;
+}
+#aboutArticals #art1 p{
+	margin-top: 1em;
+	text-align: justify;
+}
+#aboutArticals #art2 h2{
+	text-align: left;
+}
+#aboutArticals #art2 span{
+	margin-left: 1em;
+}
+#aboutArticals #art2 img{
+	float: right;
+	margin: 1em;
+}
+#aboutArticals #art2 p{
+	margin-top: 1em;
+	text-align: justify;
+}
+#conceptAbout{
+	background-color: #EAEFCF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+#conceptAbout div{
+	padding: 2em 1em;
+}
+#conceptAbout div *{
+	padding: 0.5em 0;
+}
+
+/*------PRODUCT------*/
+#product{
+	background-color: white;
+	padding: 2em;
+	margin: 0 0 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#product #head{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#product #achat{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#product #achat *{
+	text-align: right;
+}
+#panier{
+	display: inline-block;
+	background-color: #B09067;
+	padding: 1em 1em;
+	color: white;
+	letter-spacing: 0.2em;
+	margin-bottom: 0.3em;
+}
+#panier:hover{
+	opacity: 0.7;
+}
+#text *{
+	margin: 0.5em 0;
+}
+
+/*-------footer-------*/
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+	background-image: url(img/bg.jpg) ;
+	background-color: #96B011;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+footer a, footer a:visited{
+	color: white;
+}
+footer > ul{
+	background-color: rgb(135,158,15);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+footer > ul li{
+	text-align: center;
+	padding: 1% 0;
+}
+footer #navBas{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+footer #navBas ul{
+	text-align: center;
+	margin: 2% 0;
+}
+footer #navBas ul li{
+	padding: 0.3em;
+}
+footer #navBas ul li:first-of-type{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+footer #navBas ul li a{
+	opacity: 0.5;
+}
+footer #navBas ul li a:hover{
+	opacity: 1;
+}
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(135,158,15,0.5);
+}
+#licence img {
+    width: 50px;
+}
+#licence p{
+    font-size: 10px;
+}
+
+
+/*------------------------------------------MEDIA------------------------------------*/
+@media screen and (max-width: 1024px) {
+
+/*------Header-----*/
+	header > div {
+		background-size: 75px;
+	}
+	header div #logo{
+		margin: 9% 3%;
+	}
+	header #nav li{
+		padding: 0.4em;
+		margin-bottom: 1.5em;
+	}
+	header #nav li a{
+		font-size: 0.8em;
+	}
+	.head2{
+		display: none;
+	}
+
+/*--------HOME-------*/
+	#choix{
+		margin: 1.5em 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white;
+		width: 100%;
+		padding: 0.7em 0;
+	}
+	#choix .the div{
+		width: 50%;
+	}
+/*-------footer-------*/
+	footer > ul li{
+		font-size: 0.7em;
+	}
+	footer #navBas ul li{
+		padding: 0.5em;
+	}
+	footer #navBas ul li:first-of-type{
+		font-size: 0.9em;
+	}
+	footer #navBas ul li{
+		font-size: 0.7em;
+	}
+/*-------Listing------*/
+	#listing .presentation img{
+		display: none;
+	}
+	#listing .presentation span{
+		margin-left: 0;
+	}
+	#listing .article{
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+	}
+	#listing .article *{
+		margin: 0.3em 0;
+	}
+
+/*------About--------*/
+	#aboutArticals #art1 img{
+		float: left;
+		margin: 1.5em 1em 0.7em;
+		width: 60%;
+	}
+	#aboutArticals #art2 img{
+		float: right;
+		margin: 1.5em 1em 0.7em;
+		width: 60%;
+	}
+	#aboutArticals #art2 p{
+		margin-top: 1em;
+		text-align: justify;
+	}
+	#conceptAbout{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	
+/*------Header-----*/
+	header{
+		height: 350px;
+	}
+	header > p{
+		font-size: 15px;
+	}
+	header > div{
+		background-image: none;
+	}
+	.head1{
+		display: none;
+	}
+	.head2{
+		display: inline-block;
+		color: white;
+		text-align: center;
+	}
+	#specialPanier{
+		float: left;
+		-webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.48); 
+		box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.48);
+	}
+	.head2{
+		padding-top: 3em;
+	}
+	.head2 ul{
+		clear: both;
+	}
+	.head2 ul li{
+		display: inline-block;
+		width: 100%;
+		padding:0.5em 0;
+	}
+	.head2 a{
+		color: white;
+	}
+	.head2 span{
+		display: none;
+	}
+	.head2 > a {
+		padding: 0.2em 0.7em;
+		-webkit-border-radius: 0px 40px 40px 0px;
+		-moz-border-radius: 0px 40px 40px 0px;
+		border-radius: 0px 40px 40px 0px;
+	}
+	.head2 > a i{
+		border:1px solid white;
+		padding: 10px;
+		border-radius: 50%;
+	}
+	.head2 ul li:not(:first-child):hover{
+		background-color: rgba(255,255,255,0.2);
+	}
+
+/*-------Main--------*/
+	#best div{
+		margin: 2em 0;
+	}
+/*-------footer-------*/
+	footer > ul{
+		flex-wrap: wrap;
+	}
+	footer > ul li{
+		width: 50%;
+	}
+	footer #navBas {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+/*------Listing------*/
+	#listing, #listing article{
+		width: 100%;
+	}
+	#listing img[alt$="big"]{
+		width: 100%;
+	}
+/*------PRODUCT------*/
+	#product > p{
+		text-align: center;
+		margin: 1em 0;
+	}
+	#product #head{
+		flex-direction: column;
+		text-align: center;
+	}
+	#star{
+		text-align: center;
+	}
+	#product #achat{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#product #achat *{
+		text-align: center;
+		width: 100%;
+	}
+
+	#panier{
+		display: inline-block;
+		background-color: #B09067;
+		padding: 1em 1em;
+		color: white;
+		letter-spacing: 0.2em;
+		margin-bottom: 0.3em;
+	}
+	#panier:hover{
+		opacity: 0.7;
+	}
+	#text *{
+		margin: 0.5em 0;
+	}
+/*------About--------*/
+	#aboutArticals article h2{
+		font-size: 15px;
+	}
+	#aboutArticals #art1 img{
+		margin: 1.5em 0 0.7em;
+		width: 100%;
+	}
+	#aboutArticals #art2 img{
+		margin: 1.5em 0 0.7em;
+		width: 100%;
+	}
+	#aboutArticals article p{
+		clear: both;
+	}
+}
